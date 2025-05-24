@@ -1,0 +1,20 @@
+ <div class="container">
+        <h1>Échange de Briques LEGO</h1>
+        <div class="grille">
+             {{#each Briques }}
+            <div class="brique">
+                <img src="./assets/{{this.image}}" alt="{{this.nom}}">
+                <div class="details">
+                    <h3>{{this.nom}}</h3>
+                    <div class="detailsbrique">
+                        <p class="valeur"><strong>Valeur</strong> {{this.valeur}}</p>
+                        <p class="couleur"> <strong>Couleur</strong> {{this.couleur}}</p>
+                    </div>
+                    <input class="input_quantite" data-id ="{{this.id_brique}}" type="number" min="0" max="500"  placeholder="0">
+                </div>
+            </div>
+            {{/each}}           
+        </div>
+        <input type="text" placeholder="Entrez un nom pour l'échange" id="input_nomExchange" class="nomechange erreur"  minlength="5" maxlength="200" >
+        <button id="create_exchange" class="creer">Créer l'échange</button>
+    </div>

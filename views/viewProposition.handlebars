@@ -1,0 +1,25 @@
+        <h1> Voir La Proposition </h1>
+<div class="info_echange">
+    {{#each proposition}}
+            <p>Nom de l'&eacute;change : {{this.nomEchange}}</p>
+            <p>Cr&eacute;&eacute;e par : {{this.nomUtilisateur}} </p>
+        <div class="valeur_totale">
+            <p>Valeur globale approximative : <span class="total">{{this.valeurGlobale}}$</span></p>
+        </div>
+    {{/each }}
+        </div>
+
+        <h2>D&eacute;tails de la Proposition</h2>
+        <ul class="liste_brique">
+            <!-- Liste des briques propos&eacute;es -->
+            <li class="brique_item">
+                <span class="nom_brique">Brique 2x2 - noir</span>
+                <span class="quantite_brique">Quantit&eacute;: 10</span>
+                <span class="valeur_brique">Valeur unitaire: 0.15$</span>
+            </li>
+        </ul>
+         <div class="valeur_totale">
+            <p>Valeur globale approximative : <span class="total">4.95$</span></p>
+        </div>
+
+        

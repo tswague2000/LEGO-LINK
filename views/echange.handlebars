@@ -1,0 +1,23 @@
+ {{#each Exchange }}
+<h1>{{this.nomEchange}}</h1>
+{{#each this.briques}}
+        <div class="item">
+            <img src="/assets/{{this.imageBrique}}" alt="{{this.nomBrique}}">
+            <div class="details">
+                <p>{{this.nomBrique}}</p>
+                <div class="info">
+                    <span>Quantit&eacute;: {{this.quantiteBrique}}</span>
+                    <span>Valeur unitaire: {{this.valeurBrique}}$</span>
+                </div>
+            </div>
+        </div>
+{{/each}}
+        <div class="total">
+            <p>Valeur globale approximative: {{this.valeurGlobale}}$</p>
+        </div>
+        <div class="link-proposition">
+            <button class="proposition" data-id="{{this.id_echange}}" >créer une proposition</button>
+            <button class="voir-proposition"> voir une proposition</button>
+        </div>
+  {{/each }}
+

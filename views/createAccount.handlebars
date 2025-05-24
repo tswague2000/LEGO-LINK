@@ -1,0 +1,29 @@
+<div class="wrapper">
+            <form action="#" id="loginForm" method="POST" novalidate>
+                <h1>Créer un compte</h1>
+                <div class="input-box">
+                    <input type="text" id="first-name" placeholder="prénom" >
+                    <small id="small-firstName"></small>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="last-name" placeholder="nom" required minlength="2" max="30" >
+                    <small id="small-lastName"></small>
+                </div>
+                <div class="input-box">
+                    <input type="text" id="input-email" placeholder="example@gmail.com" >
+                    <small  id="smallMail"></small>
+                    <i id="envelope" class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="input-password" placeholder="mot de passe" >
+                   <small id="smallPassword"></small>
+                    <i id="toggleIcon" class="fa-solid fa-eye-slash"></i>
+                </div>               
+                <button type="submit" class="btn">Créer un compte</button>
+                <small id="auth-error"></small>
+                <p>En cliquant sur le bouton <span>&laquo; Créer un compte &raquo;</span> vous accepetez les conditions
+                    d'utilisations et les politiques de confidentilité de legoLink
+                     <p>Vous avez un compte? <a href="/api/connexion">Connectez-vous.</a></p></p>
+            </form>
+            
+        </div>

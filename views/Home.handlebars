@@ -1,0 +1,19 @@
+<h2>&eacute;changes</h2>
+        <ul class="list-group"> 
+            {{#each Exchanges}}
+            <li class="echange">
+                <p class="echange_titre">{{this.nom_echange}}</p>
+                <span class="echange_nom">{{this.utilisateur_prenom}}, {{this.utilisateur_nom}}</span>
+                <button  class="btn_voir" data-id="{{this.id_echange}} ">Voir l'&eacute;change</button>
+            </li> 
+            {{/each}}
+        </ul>
+        {{#if user}}
+        <a id="btn-createExchange" class="btn_creer" href="/createEchange">
+        Cr&eacute;er un &eacute;change
+        </a>
+        {{/if}}
+        
+
+
+        

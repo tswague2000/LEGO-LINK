@@ -1,0 +1,21 @@
+         <div class="container">
+                        <h1>Cr&eacute;er Une Proposition</h1>
+        <div class="grille">
+             {{#each Briques }}
+            <div class="brique">
+                <img src="./assets/{{this.image}}" alt="{{this.nom}}">
+                <div class="details">
+                    <h3>{{this.nom}}</h3>
+                    <div class="detailsbrique">
+                        <p class="valeur"><strong>Valeur</strong> {{this.valeur}}</p>
+                        <p class="couleur"> <strong>Couleur</strong> {{this.couleur}}</p>
+                    </div>
+                    <input id="input-quantity" class="input_quantite" data-id ="{{this.id_brique}}" type="number" placeholder="0">
+                    <div id="error-quantity"></div>
+                </div>
+            </div>
+            {{/each}}           
+        </div>
+       
+        <button id="create-proposition"  class="creer">Soumettre</button>
+    </div>

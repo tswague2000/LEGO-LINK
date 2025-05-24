@@ -1,0 +1,99 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 100vh;
+    /* padding: 20px 20px 20px 20px; */
+}
+
+form {
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px;
+    min-width: 600px;
+    align-items: center;
+    display: flex; /* Ajout pour structurer les éléments */
+    flex-direction: column; /* Empile les éléments verticalement */
+    justify-content: center; /* Centre les éléments verticalement */
+}
+
+.wrapper {
+    width: 600px;
+    height: 600px;
+    background-color: #ffece3;
+    color: black;
+    border-radius: 5px;
+}
+
+.wrapper h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.wrapper .input-box {
+    width: 90%;
+    height: 50px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(15, 14, 14, 0.942);
+    border-radius: 10px;
+    font-size: 16px;
+    color: black;
+    padding: 5px 10px 10px 10px;
+}
+
+.input-box input::placeholder {
+    color: rgb(93, 91, 91);
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transform: translate(-50%);
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+
+.wrapper .btn {
+    display: block;
+    align-items: center;
+    width: 200px;
+    background-color: #e84a27;
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin: 20px 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+    align-self: center; 
+}
+.wrapper .utilisateur_existant{
+    align-items: center;
+    align-self: center; 
+}
+.wrapper p a{
+    text-decoration: none;
+}
+.wrapper p a:hover{
+    text-decoration: underline;
+}
+
+.input-box small{
+    margin: 1rem 1rem;
+}
+
+.error{
+    color: red;
+}

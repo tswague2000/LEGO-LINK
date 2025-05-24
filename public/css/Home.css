@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+    background-color: #ffc107;
+    padding: 1rem;
+    text-align: left; 
+    position: relative;
+}
+
+.home {
+    font-size: 2rem;
+    color: white;
+    background-color: #e84a27;
+    border: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    margin-left: 6rem;
+    cursor: pointer;
+}
+#logo-link{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#img-link{
+    font-size: 40px;
+   cursor: pointer;
+   background: none;
+    
+}
+#img-link:hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+
+header .lien_profile {
+    position: absolute;
+    right: 12rem; 
+    top: 2.5rem;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+header .btn-log{
+    display: flex;
+    position: absolute;
+    right: 5rem;
+    top: 2.5rem;
+    border: none;
+}
+#deconnexion{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: none;
+    color: white;
+    background-color: #e84a27;
+    text-decoration: none;
+}
+#deconnexion:hover {
+    background-color: #cf3f1f; 
+    cursor: pointer; 
+}
+#btn-connexion{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 8px;
+    border: none;
+    color: white;
+    background-color: #e84a27;
+    text-decoration: none;
+}
+#btn-connexion:hover {
+    background-color: #cf3f1f; 
+    cursor: pointer; 
+}
+
+.btn-log button{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #e84a27;
+    text-decoration: none;
+}
+
+
+main {
+    flex-grow: 1;
+    padding: 1rem; 
+}
+
+.echange {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.echange_titre {
+    font-weight: bold;
+    flex: 1;
+}
+
+.echange_nom {
+    font-size: 0.9rem;
+    color: #555;
+    flex-shrink: 0;
+}
+
+
+.btn_voir {
+    background-color: #e84a27;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.btn_effacer {
+    background-color: #e84a27;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.btn_creer {
+    display: block;
+    width: 100%;
+    background-color: #e84a27;
+    color: white;
+    border: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #ffc107;
+    color: rgb(0, 0, 0);
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 0.5rem;
+    text-align: left; 
+    padding-left: 6rem;
+}

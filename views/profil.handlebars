@@ -1,0 +1,12 @@
+ <h2>&eacute;changes</h2>
+        <ul class="list-group">
+        {{#each exchangesUser}}
+            <li class="echange">
+                <p class="echange_titre">{{this.nom_echange}}</p>
+                <span class="echange_nom">{{this.nom_utilisateur}}, {{this.prenom}}</span>
+                <button  class="btn_voir" data-id="{{this.id_echange}} ">Voir l'&eacute;change</button>
+                <button data-id="{{this.id_echange}}" class="btn_effacer">X</button>
+            </li> 
+        {{/each}}
+
+        </ul>
